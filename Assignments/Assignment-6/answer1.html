@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="answer1.css">
+    <title>Simple Web Page</title>
+    <style>
+        .box3{
+            background-color: peru;
+            font-size:xx-large;
+            font-weight: 700;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+ 
+    <!-- Inline CSS -->
+    <div class="box1" style="background-color:darkorange; font-size:xx-large; font-weight: 700; text-align: center;">
+        <p>This is an element using inline CSS.</p>
+    </div>
+
+
+
+    <!-- External CSS -->
+    <div class="box2">
+        <p>This is an element and using external CSS.</p>
+    </div>
+
+
+    <!-- Internal CSS -->
+    <div class="box3">
+        <p>This is an element and using internal CSS.</p>
+    </div>
+
+    <main class="content" style="background-color: bisque; font-size: x-large; font-weight: 500;">
+        <dl>
+            <dt> when targeting the same elements with inline, internal, and external CSS,
+            the cascade and specificity rules dictate the order of precedence:</dt>
+
+            <dd>
+               1.Inline styles have the highest precedence and override both internal and external styles. <br>
+               2.Internal styles take precedence over external styles but are overridden by inline styles. <br>
+               3.External styles have the lowest precedence and can be overridden by both inline and internal styles.
+            </dd>
+        </dl>
+    </main>
+</body>
+</html>
