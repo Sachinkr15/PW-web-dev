@@ -1,0 +1,94 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    border: 1px solid yellowgreen;
+    position: absolute;
+  }
+  #boxA {
+    top: 200px;
+    left: 200px;
+}
+  
+  #boxB.left-above {
+    top: 170px;
+    left: 170px;
+}
+  #boxB.right-above {
+    top: 170px;
+    left: 230px;
+}
+  #boxB.left-below {
+    top: 230px;
+    left: 170px;
+}
+  #boxB.right-below {
+    top: 230px;
+    left: 230px;
+}
+
+.card{
+  border: 2px solid black;
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgb(255, 228, 196);
+}
+
+.card-header{
+  font-size: x-large;
+  font-weight: 700;
+  padding:15px 0 15px 0 ;
+}
+
+.menu ul{
+  display: flex;
+  justify-content: space-around;
+ 
+}
+
+.menu a{
+  padding-top: 10px;
+  text-decoration: none;
+  color: white;
+
+}
+
+.button p{
+  text-align: center;
+  padding: 3px;
+}
+
+.box2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.red {
+  background-color: red;
+  top: 100px;
+  left: 100px;
+  z-index: 1;
+}
+
+.green {
+  background-color: green;
+  top: 150px;
+  left: 150px;
+  z-index: 2;
+}
+
+.blue {
+  background-color: blue;
+  top: 200px;
+  left: 200px;
+  z-index: 3;
+}
