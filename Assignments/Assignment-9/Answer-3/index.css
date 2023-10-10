@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.child{
+    height: 250px;
+    width: 250px;
+    background-color: chartreuse;
+ }
+
+ .parent{
+    border: 2px solid black;
+    height: 500px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
