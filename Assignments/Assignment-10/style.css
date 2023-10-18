@@ -5,10 +5,10 @@
 .container{
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(3,250px);
+    grid-template-rows: repeat(3,200px);
     gap: 10px;
     padding: 10px;
-    
+    width: 78%;
     border: 5px solid black;
 }
 
@@ -105,4 +105,36 @@ img{
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+}
+
+.container3{
+    border: 5px solid black;
+    margin-top: 20px;
+    height: 15%;
+    width:45%;
+    display: grid;
+    grid-template-columns:repeat(6,100px) ;
+    gap: 10px;
+    padding: 15px;
+}
+
+.Box{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 150%;
+    padding: 20px;
+    order: 1;
+}
+.Box:nth-child(even){
+    background-color: #ccc;
+    color: #000;
+}
+
+.Box2{
+    order:3;
+}
+
+.Box1{
+    order:2;
 }
