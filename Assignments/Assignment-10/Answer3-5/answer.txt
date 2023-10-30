@@ -1,0 +1,41 @@
+ANSWER-5
+
+'justify-items' and 'justify-self' are CSS properties used in the context of CSS Grid layout to control the horizontal alignment of grid items within a grid container. They work together to determine how the items are aligned within their grid cells.
+
+Here's a breakdown of the differences between justify-items and justify-self with code examples:
+
+1. justify-items:
+
+    The justify-items property is applied to the grid container, and it specifies how all the grid items within the container should be horizontally aligned within their respective grid cells.
+
+    Example:
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center; /* Horizontal alignment for all grid items */
+        }
+
+        .grid-item {
+            /* The horizontal alignment of this item will be centered */
+        }
+
+2.justify-self:
+
+    The justify-self property is applied to individual grid items, and it allows you to specify how a specific grid item should be horizontally aligned within its grid cell, overriding the alignment set by justify-items.
+
+    Example:
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: center; /* Default horizontal alignment for all grid items */
+        }
+
+        .grid-item {
+            justify-self: start; /* Horizontal alignment of this item overrides the container alignment */
+        }
+
+In this example, the grid container sets justify-items to "center," which means all grid items will be horizontally centered within their respective grid cells by default. However, for a specific grid item with the class .grid-item, we override this behavior by setting justify-self to "start," which aligns that particular item to the start of its grid cell.
+
+In summary, justify-items sets the default horizontal alignment for all grid items within a container, while justify-self allows you to individually control the horizontal alignment of specific grid items within their cells, overriding the container-level alignment.
