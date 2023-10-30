@@ -1,0 +1,39 @@
+"grid-auto-row" and "grid-auto-column" are properties in CSS Grid Layout that allow you to define how auto-generated rows and columns should behave within a grid container when grid items are placed outside of the explicitly defined rows and columns. These properties help you control the sizing and behavior of implicitly created grid tracks.
+
+Here's how they work with code examples:
+
+1. grid-auto-row:
+
+    This property allows you to control the size and behavior of automatically created rows in a grid when grid items are placed beyond the explicitly defined rows. By setting grid-auto-row, you can specify the size of these implicit rows.
+
+    example:
+        .grid-container {
+        display: grid;
+        grid-template-rows: 50px 50px; /* Define two explicit rows */
+        grid-auto-rows: 100px; /* Set the size of implicit rows */
+        }
+
+        .grid-item {
+        grid-row: 3; /* This item is placed in the third row, which is implicitly created */
+    }
+
+    In this example, if a grid item is placed in a row beyond the two explicitly defined rows (e.g., the third row), a new implicit row with a height of 100px will be created to accommodate the item.
+
+2. grid-auto-column:
+
+    This property allows you to control the size and behavior of automatically created columns in a grid when grid items are placed beyond the explicitly defined columns. By setting grid-auto-column, you can specify the size of these implicit columns.
+
+    example:
+        .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* Define two explicit columns */
+        grid-auto-columns: 100px; /* Set the size of implicit columns */
+        }
+
+        .grid-item {
+        grid-column: 4; /* This item is placed in the fourth column, which is implicitly created */
+    }
+    
+    In this example, if a grid item is placed in a column beyond the two explicitly defined columns (e.g., the fourth column), a new implicit column with a width of 100px will be created to accommodate the item.
+
+These properties are particularly useful when you have grid items that don't fit within the explicitly defined rows and columns, and you want to control the sizing of the implicitly created rows or columns to ensure proper alignment and spacing in your grid layout.
