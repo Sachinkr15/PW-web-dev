@@ -1,0 +1,48 @@
+List and describe the five primitive data types in JavaScript.
+
+Answer-
+
+Certainly! In JavaScript, there are five primitive data types:
+
+1.Number: Represents numeric data, both integers and floating-point numbers. It includes whole numbers as well as decimals.
+
+Example:
+let integerNumber = 10;
+let floatingNumber = 3.14;
+
+
+2.String: Represents textual data enclosed in single (' ') or double (" ") quotes. Strings are used to store sequences of characters.
+
+Example:
+let text = 'Hello, World!';
+
+
+3.Boolean: Represents a logical entity, either true or false. Booleans are used in conditions and comparisons.
+
+Example:
+let isTrue = true;
+let isFalse = false;
+
+
+4.Undefined: Represents a variable that has been declared but has not been assigned a value. When a variable is declared without initialization, its default value is undefined.
+
+Example:
+let uninitializedVar;
+console.log(uninitializedVar); // Output: undefined
+
+
+5.Null: Represents an intentional absence of any value or an empty value. It's often used to explicitly indicate that a variable doesn't have a value.
+
+Example:
+let emptyValue = null;
+
+6.Symbol: Introduced in ECMAScript 2015 (ES6), the Symbol data type represents a unique and immutable value that may be used as the key of an Object property.
+
+Example- 
+const sym1 = Symbol();
+const sym2 = Symbol('description'); // Optional description
+
+7.BigInt: Introduced in ECMAScript 2020 (ES11), BigInt is a numeric primitive data type that allows representation of integers with arbitrary precision, not limited by the 53-bit storage limit of the Number type.
+
+Example- 
+const bigIntValue = 1234567890123456789012345678901234567890n;

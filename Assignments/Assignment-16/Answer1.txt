@@ -1,0 +1,17 @@
+Answer1 - 
+
+Version control, also known as source code management or revision control, is a system that tracks and manages changes to files and code in a software development project over time.
+
+It is a fundamental and critical aspect of software development, offering several benefits, including:
+
+1. History and Tracking: Version control systems maintain a complete history of all changes made to a project's files. This history includes information about who made each change, when the change was made, and what specific changes were implemented. This helps developers track the evolution of the codebase, identify when and why certain changes were introduced.
+
+2.Collaboration: Version control enables multiple developers to work on the same project simultaneously. It allows them to collaborate by merging their changes and resolving conflicts, ensuring that changes from different team members do not interfere with each other.
+
+3.Backup and Recovery: Version control serves as a form of backup for a software project. If critical data or code is lost, damaged, or accidentally deleted, you can use the version control system to retrieve previous versions of the project.
+
+4.Experimentation and Branching: Version control systems facilitate the creation of branches, which are separate lines of development. Developers can use branches to work on new features, bug fixes, or experimental changes without affecting the main codebase. Once the work on a branch is complete and tested, it can be merged back into the main codebase.
+
+5.Continuous Integration (CI) and Continuous Delivery (CD): CI/CD pipelines rely heavily on version control systems to automate the testing, building, and deployment of software. 
+
+There are various version control systems available, with Git being one of the most popular and widely used due to its distributed nature, speed, and versatility. Other version control systems include Subversion, Mercurial, and more.

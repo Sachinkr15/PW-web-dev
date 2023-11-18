@@ -11,3 +11,17 @@ Precedence determines the priority of operators in an expression. Operators with
 
 For instance, in the expression 3 + 4 * 5, multiplication (*) has higher precedence than addition (+), so 4 * 5 is evaluated first, resulting in 3 + 20, which equals 23.
 Parentheses can be used to override the default precedence and enforce a specific order of evaluation.
+
+
+2.Associativity comes into play when operators of the same precedence appear in an expression. It defines the order in which operations are performed.
+For instance, in expressions involving addition or subtraction (+ and -) with the same precedence, JavaScript follows left-to-right associativity. So, a + b - c will be evaluated as (a + b) - c.
+
+These concepts are important for several reasons:
+
+1. Expression Evaluation: Understanding precedence and associativity ensures that expressions are evaluated as intended. Without this knowledge, incorrect calculations may occur due to the wrong order of operations.
+
+2.Code Readability and Maintenance: Explicitly using parentheses to enforce the desired order of operations can make code more readable and easier to maintain. It helps other developers (or even yourself in the future) quickly grasp the intended logic.
+
+3.Avoiding Bugs and Errors: Incorrect assumptions about operator precedence or associativity can lead to subtle bugs that are hard to detect.
+Having a clear understanding helps in writing more robust and bug-free code.
+
