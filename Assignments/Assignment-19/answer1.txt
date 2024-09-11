@@ -1,0 +1,121 @@
+Conditional statements in JavaScript allow you to perform different actions based on different conditions. These statements evaluate an expression and execute a block of code if the condition is true or false.
+
+Types of Conditional Statements:
+if statement
+if...else statement
+else if statement
+switch statement
+
+
+
+
+1. if Statement
+The if statement executes a block of code if the specified condition is true.
+
+Syntax:
+
+if (condition) {
+  // code to be executed if the condition is true
+}
+
+
+Example:
+let age = 18;
+
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+}
+In this example, if the value of age is 18 or more, the message "You are eligible to vote." will be displayed.
+
+
+
+
+
+
+2. if...else Statement
+The if...else statement executes one block of code if the condition is true, and another block if the condition is false.
+
+Syntax:
+
+if (condition) {
+  // code to be executed if the condition is true
+} else {
+  // code to be executed if the condition is false
+}
+Example:
+let age = 16;
+
+if (age >= 18) {
+  console.log("You are eligible to vote.");
+} else {
+  console.log("You are not eligible to vote.");
+}
+Here, if age is less than 18, the second message will be printed.
+
+
+
+
+
+3. else if Statement
+The else if statement can test multiple conditions. If the first condition is false, it checks the next one.
+
+Syntax:
+if (condition1) {
+  // code to be executed if condition1 is true
+} else if (condition2) {
+  // code to be executed if condition2 is true
+} else {
+  // code to be executed if none of the conditions are true
+}
+Example:
+let marks = 85;
+
+if (marks >= 90) {
+  console.log("Grade: A");
+} else if (marks >= 80) {
+  console.log("Grade: B");
+} else if (marks >= 70) {
+  console.log("Grade: C");
+} else {
+  console.log("Grade: D");
+}
+This example checks multiple conditions to determine the grade based on marks.
+
+
+
+
+
+
+4. switch Statement
+The switch statement evaluates an expression, matching the value against multiple cases, and executes the block of code associated with the matching case.
+
+Syntax:
+switch (expression) {
+  case value1:
+    // code to be executed if expression matches value1
+    break;
+  case value2:
+    // code to be executed if expression matches value2
+    break;
+  default:
+    // code to be executed if no cases match
+}
+Example:
+
+let day = 2;
+
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+In this example, since day is 2, the output will be "Tuesday".
+
